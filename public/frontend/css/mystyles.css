@@ -1,1 +1,31 @@
 /*YOUR CUSTOM STYLES*/
+.navbar-before .navbar-nav > li {
+  font-size: 11px;
+  margin-left: 15px;
+  margin-right: 15px;
+  font-weight: 400;
+}
+.navbar-before .navbar-nav > li a {
+  font-size: 11px;
+}
+.navbar-before .navbar-nav > li a.login {
+  color: #ff1d13;
+}
+.navbar-before .navbar-nav > li a.login:hover {
+  color: #0ebcf2;
+}
+.navbar-before .navbar-nav > li a.logout {
+  color: #ff7941;
+}
+.navbar-before .navbar-nav > li a.logout:hover {
+  color: #0ebcf2;
+}
+.banner-category-title {
+  text-transform: capitalize;
+}
+.navbar-before {
+  padding: 5px;
+}
+.gap {
+  margin: 20px 0 20px 0;
+}

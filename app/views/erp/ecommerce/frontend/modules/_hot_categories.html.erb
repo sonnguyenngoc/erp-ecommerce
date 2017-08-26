@@ -1,0 +1,67 @@
+<% (0..4).each do |hot_category| %>
+<h3 class="widget-title">Làm Đẹp & Sức Khỏe</h3>
+<div class="owl-carousel owl-loaded owl-nav-out" data-options='{"items":5,"loop":true,"nav":true}'>
+    <% (0..9).each do |hot_category| %>
+    <div class="owl-item">
+        <div class="product  owl-item-slide">
+            <ul class="product-labels"></ul>
+            <div class="product-img-wrap">
+                <img class="product-img" src="/frontend/img/test_product/sports/5.jpg" alt="Image Alternative text" title="Image Title" />
+            </div>
+            <%= link_to "", "", class: "product-link" %>
+            <div class="product-caption">
+                <ul class="product-caption-rating">
+                    <li class="rated">
+                        <i class="fa fa-star"></i>
+                    </li>
+                    <li class="rated">
+                        <i class="fa fa-star"></i>
+                    </li>
+                    <li class="rated">
+                        <i class="fa fa-star"></i>
+                    </li>
+                    <li class="rated">
+                        <i class="fa fa-star"></i>
+                    </li>
+                    <li>
+                        <i class="fa fa-star"></i>
+                    </li>
+                </ul>
+                <h5 class="product-caption-title">iRobot BRAAVA 320 Floor Sweeping/Mopping Robot Cleaner - White</h5>
+                <div class="product-caption-price"><span class="product-caption-price-new">$103</span>
+                </div>
+                <ul class="product-caption-feature-list">
+                    <li>Free Shipping</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <% end %>
+</div>
+<div class="gap"></div>
+<div class="row" data-gutter="15">
+    <div class="col-md-6">
+        <div class="banner banner-o-hid" style="background-image:url(/frontend/img/hot-category-banner-01.jpg);">
+            <a class="banner-link" href="#"></a>
+            <div class="banner-caption-left">
+                <h5 class="banner-title">Woman Sunglasses</h5>
+                <p class="banner-desc">Up to 70% Off.</p>
+                <p class="banner-shop-now">Shop Now <i class="fa fa-caret-right"></i>
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-6">
+        <div class="banner banner-o-hid" style="background-image:url(/frontend/img/hot-category-banner-02.jpg);">
+            <a class="banner-link" href="#"></a>
+            <div class="banner-caption-left">
+                <h5 class="banner-title">Hot Snowboards</h5>
+                <p class="banner-desc">Save on Winter Sports</p>
+                <p class="banner-shop-now">Shop Now <i class="fa fa-caret-right"></i>
+                </p>
+            </div>
+            <img class="banner-img" src="/frontend/img/test_banner/24.png" alt="Image Alternative text" title="Image Title" style="top: -10px; right: 0; width: 270px;" />
+        </div>
+    </div>
+</div>
+<% end %>

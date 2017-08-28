@@ -24,7 +24,30 @@
 
 <body>
     
-    <%= yield %>
+    <div class="global-wrapper clearfix" id="global-wrapper">
+        <%= render "erp/ecommerce/frontend/modules/top_navbar" %>
+        
+        <%= render "erp/ecommerce/frontend/modules/dialog/login" %>
+        <%= render "erp/ecommerce/frontend/modules/dialog/register" %>
+        <%= render "erp/ecommerce/frontend/modules/dialog/forgot_password" %>
+        
+        <nav class="navbar navbar-inverse navbar-main navbar-pad">
+            <%= render "erp/ecommerce/frontend/modules/center_navbar" %>
+        </nav>
+    
+        <nav class="navbar-inverse navbar-main yamm">
+            <%= render "erp/ecommerce/frontend/modules/bottom_navbar" %>
+        </nav>        
+    
+        <%= yield %>
+    
+        <%= render "erp/ecommerce/frontend/modules/footer" %>
+        
+        <div class="copyright-area">
+            <%= render "erp/ecommerce/frontend/modules/copyright" %>
+        </div>
+    </div>
+    <%= render "erp/ecommerce/frontend/modules/js_include" %>
     
 </body>
 

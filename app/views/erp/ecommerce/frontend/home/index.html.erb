@@ -1,106 +1,83 @@
-<div class="global-wrapper clearfix" id="global-wrapper">
-    <%= render "erp/ecommerce/frontend/modules/top_navbar" %>
-    
-    <%= render "erp/ecommerce/frontend/modules/dialog/login" %>
-    <%= render "erp/ecommerce/frontend/modules/dialog/register" %>
-    <%= render "erp/ecommerce/frontend/modules/dialog/forgot_password" %>
-    
-    <nav class="navbar navbar-inverse navbar-main navbar-pad">
-        <%= render "erp/ecommerce/frontend/modules/center_navbar" %>
-    </nav>
+<div class="owl-carousel owl-loaded owl-nav-dots-inner" data-options='{"items":1,"loop":true,"autoplay":true,"autoplayTimeout":5000}'>
+    <%= render "erp/ecommerce/frontend/modules/home/slideshow" %>
+</div>
 
-    <nav class="navbar-inverse navbar-main yamm">
-        <%= render "erp/ecommerce/frontend/modules/bottom_navbar" %>
-    </nav>        
+<div class="gap"></div>
 
-    <div class="owl-carousel owl-loaded owl-nav-dots-inner" data-options='{"items":1,"loop":true,"autoplay":true,"autoplayTimeout":5000}'>
-        <%= render "erp/ecommerce/frontend/modules/slideshow" %>
-    </div>
-    
+<div class="container">
+    <%= render "erp/ecommerce/frontend/modules/home/popular_categories" %>
     <div class="gap"></div>
-    
+    <%= render "erp/ecommerce/frontend/modules/home/category_tabs" %>
+    <div class="gap"></div>
+    <div class="row" data-gutter="15">
+        <div class="col-md-4">
+            <div class="banner" style="background-color:#83599A;">
+                <a class="banner-link" href="#"></a>
+                <div class="banner-caption-top-left">
+                    <h5 class="banner-title">Backpack Collection</h5>
+                    <p class="banner-desc">Don't Be Vague. Ask for Backpack .</p>
+                    <p class="banner-shop-now">Shop Now <i class="fa fa-caret-right"></i>
+                    </p>
+                </div>
+                <img class="banner-img" src="/frontend/img/test_banner/1.png" alt="Image Alternative text" title="Image Title" style="bottom: -8px; right: -32px;" />
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="banner" style="background-color:#EF4D9C;">
+                <a class="banner-link" href="#"></a>
+                <div class="banner-caption-top-right">
+                    <h5 class="banner-title">Best 2015 Tablets</h5>
+                    <p class="banner-desc">Double the Pleasure, Double the Tablets.</p>
+                    <p class="banner-shop-now">Shop Now <i class="fa fa-caret-right"></i>
+                    </p>
+                </div>
+                <img class="banner-img" src="/frontend/img/test_banner/2.png" alt="Image Alternative text" title="Image Title" style="bottom: -22px; left: 0; width: 235px;" />
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="banner" style="background-color:#FEA92E;">
+                <a class="banner-link" href="#"></a>
+                <div class="banner-caption-bottom-left">
+                    <h5 class="banner-title">Top Glasses</h5>
+                    <p class="banner-desc">My Goodness, My Glasses!</p>
+                    <p class="banner-shop-now">Shop Now <i class="fa fa-caret-right"></i>
+                    </p>
+                </div>
+                <img class="banner-img" src="/frontend/img/test_banner/3.png" alt="Image Alternative text" title="Image Title" style="top: -4px; right: -15px; width: 220px;" />
+            </div>
+        </div>
+    </div>
+    <div class="gap"></div>
+    <%= render "erp/ecommerce/frontend/modules/home/hot_categories" %>
+    <div class="gap"></div>
+    <%= render "erp/ecommerce/frontend/modules/home/hot_deals" %>
+</div>    
+<div class="gap"></div>
+<div class="slider-item-sm" style="background-color:#E66514;">
     <div class="container">
-        <%= render "erp/ecommerce/frontend/modules/popular_categories" %>
-        <div class="gap"></div>
-        <%= render "erp/ecommerce/frontend/modules/category_tabs" %>
-        <div class="gap"></div>
-        <div class="row" data-gutter="15">
-            <div class="col-md-4">
-                <div class="banner" style="background-color:#83599A;">
-                    <a class="banner-link" href="#"></a>
-                    <div class="banner-caption-top-left">
-                        <h5 class="banner-title">Backpack Collection</h5>
-                        <p class="banner-desc">Don't Be Vague. Ask for Backpack .</p>
-                        <p class="banner-shop-now">Shop Now <i class="fa fa-caret-right"></i>
-                        </p>
-                    </div>
-                    <img class="banner-img" src="/frontend/img/test_banner/1.png" alt="Image Alternative text" title="Image Title" style="bottom: -8px; right: -32px;" />
-                </div>
+        <div class="slider-item-inner">
+            <div class="slider-item-caption-left slider-item-caption-white">
+                <h4 class="slider-item-caption-title">Time to Upgrade Your Smartphone</h4>
+                <p class="slider-item-caption-desc">It's Smartphone Time.</p><a class="btn btn-lg btn-ghost btn-white" href="#">Shop Now</a>
             </div>
-            <div class="col-md-4">
-                <div class="banner" style="background-color:#EF4D9C;">
-                    <a class="banner-link" href="#"></a>
-                    <div class="banner-caption-top-right">
-                        <h5 class="banner-title">Best 2015 Tablets</h5>
-                        <p class="banner-desc">Double the Pleasure, Double the Tablets.</p>
-                        <p class="banner-shop-now">Shop Now <i class="fa fa-caret-right"></i>
-                        </p>
-                    </div>
-                    <img class="banner-img" src="/frontend/img/test_banner/2.png" alt="Image Alternative text" title="Image Title" style="bottom: -22px; left: 0; width: 235px;" />
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="banner" style="background-color:#FEA92E;">
-                    <a class="banner-link" href="#"></a>
-                    <div class="banner-caption-bottom-left">
-                        <h5 class="banner-title">Top Glasses</h5>
-                        <p class="banner-desc">My Goodness, My Glasses!</p>
-                        <p class="banner-shop-now">Shop Now <i class="fa fa-caret-right"></i>
-                        </p>
-                    </div>
-                    <img class="banner-img" src="/frontend/img/test_banner/3.png" alt="Image Alternative text" title="Image Title" style="top: -4px; right: -15px; width: 220px;" />
-                </div>
-            </div>
+            <img class="slider-item-img" src="/frontend/img/test_slider/7.png" alt="Image Alternative text" title="Image Title" style="right: 0; bottom: 0; width: 22%;" />
         </div>
-        <div class="gap"></div>
-        <%= render "erp/ecommerce/frontend/modules/hot_categories" %>
-        <div class="gap"></div>
-        <%= render "erp/ecommerce/frontend/modules/hot_deals" %>
-    </div>    
-    <div class="gap"></div>
-    <div class="slider-item-sm" style="background-color:#E66514;">
-        <div class="container">
-            <div class="slider-item-inner">
-                <div class="slider-item-caption-left slider-item-caption-white">
-                    <h4 class="slider-item-caption-title">Time to Upgrade Your Smartphone</h4>
-                    <p class="slider-item-caption-desc">It's Smartphone Time.</p><a class="btn btn-lg btn-ghost btn-white" href="#">Shop Now</a>
-                </div>
-                <img class="slider-item-img" src="/frontend/img/test_slider/7.png" alt="Image Alternative text" title="Image Title" style="right: 0; bottom: 0; width: 22%;" />
-            </div>
-        </div>
-    </div>
-    <div class="gap"></div>
-    <div class="container">
-        <h3 class="widget-title-lg">Shop by Category</h3>
-        <div class="row row-sm-gap" data-gutter="15">
-            <% (0..11).each do |category    | %>
-            <div class="col-md-2">
-                <a class="banner-category" href="#">
-                    <img class="banner-category-img" src="/frontend/img/test_icon/tech.png" alt="Image Alternative text" title="Image Title" />
-                    <h5 class="banner-category-title">Home & Garden</h5>
-                    <p class="banner-category-desc">152 products</p>
-                </a>
-            </div>
-            <% end %>
-        </div>
-    </div>
-    
-    <div class="gap"></div>
-
-    <%= render "erp/ecommerce/frontend/modules/footer" %>
-    
-    <div class="copyright-area">
-        <%= render "erp/ecommerce/frontend/modules/copyright" %>
     </div>
 </div>
-<%= render "erp/ecommerce/frontend/modules/js_include" %>
+<div class="gap"></div>
+<div class="container">
+    <h3 class="widget-title-lg">CHUYÊN MỤC SẢN PHẨM</h3>
+    <div class="row row-sm-gap" data-gutter="15">
+        <% (0..11).each do |category    | %>
+        <div class="col-md-2">
+            <a class="banner-category" href="#">
+                <img class="banner-category-img" src="/frontend/img/test_icon/tech.png" alt="Image Alternative text" title="Image Title" />
+                <h5 class="banner-category-title">Home & Garden</h5>
+                <p class="banner-category-desc">152 products</p>
+            </a>
+        </div>
+        <% end %>
+    </div>
+</div>
+
+<div class="gap"></div>

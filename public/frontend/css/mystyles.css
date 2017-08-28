@@ -1,3 +1,6 @@
+input, button, select, textarea {
+  font-family: 'Open Sans', arial, helvetica, sans-serif;
+}
 /*YOUR CUSTOM STYLES*/
 .navbar-before .navbar-nav > li {
   font-size: 11px;
@@ -28,4 +31,80 @@
 }
 .gap {
   margin: 20px 0 20px 0;
+}
+.banner-category:hover, .banner-category:active, .banner-category:focus, .banner-category:visited {
+  color: #ff1d13;
+  font-weight: bold;
+  box-shadow: 0 0 20px rgba(0,0,0,0.15);
+  cursor: pointer;
+}
+.navbar-inverse .navbar-nav > li > a:hover, .navbar-inverse .navbar-nav > li > a:focus {
+  outline: 0;
+}
+.navbar-main-white .navbar-nav > li:hover > span, .dropdown-menu-category > li:hover > span, .category-pagination > li.last > span, .category-tabs .nav-pills li.active > span, .blog-sidebar-tags > li > span:hover {
+  background: #0ebcf2;
+}
+.dropdown-menu-category > li > span {
+  height: 40px;
+  line-height: 40px !important;
+  padding: 0 15px 0 50px !important;
+  font-size: 14px;
+  position: relative;
+  width: 230px;
+  display: block;
+  clear: both;
+  font-weight: normal;
+  color: #333;
+  white-space: nowrap;
+}
+.dropdown-menu-category > li > span a.sub-menu {
+  color: #333;
+}
+.dropdown-menu-category > li:hover > span a.sub-menu {
+  color: #fff;
+}
+.dropdown-menu-category > li > span a.sub-menu:hover {
+  color: #ff1d13;
+}
+.dropdown-menu-category > li > span:after {
+  position: absolute;
+  display: block;
+  content: '\f105';
+  font-family: 'FontAwesome';
+  top: 0;
+  right: 0;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  opacity: 0.6;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=60)";
+  filter: alpha(opacity=60);
+}
+@media (max-width:992px) {
+  .dropdown-menu-category > li > span:after {
+    display: none;
+  }
+}
+.navbar-main-search-category-select {
+  width: 180px;
+  font-weight: 600;
+}
+.navbar-main-search-category .form-control {
+  padding-left: 180px;
+}
+.navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
+  margin-left: 40px;
+}
+.navbar-brand > img {
+  width: 130px;  
+}
+.navbar-brand {
+  padding: 2px 15px 15px 15px;
+}
+.navbar-main-search-category {
+  width: 720px;
+}
+.navbar-form {
+  margin-top: 13px;
 }

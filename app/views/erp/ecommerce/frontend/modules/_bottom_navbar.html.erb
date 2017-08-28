@@ -2,13 +2,13 @@
     <div class="collapse navbar-collapse navbar-collapse-no-pad" id="main-nav-collapse">
         <ul class="nav navbar-nav">
             <li class="dropdown">
-                <a href="#">
-                    <span >Chúng tôi bán gì?</span>
-                    Chuyên Mục Sản Phẩm
+                <a href="javascript:void(0)">
+                    <span >Bạn muốn mua gì?</span>
+                    CHUYÊN MỤC SẢN PHẨM
                     <i class="drop-caret" data-toggle="dropdown"></i>
                 </a>
                 <ul class="dropdown-menu dropdown-menu-category">
-                    <li><a href="#"><i class="fa fa-home dropdown-menu-category-icon"></i>Home & Garden</a>
+                    <li><a href="#"><i class="fa fa-home dropdown-menu-category-icon"></i>Máy Tính</a>
                         <div class="dropdown-menu-category-section">
                             <div class="dropdown-menu-category-section-inner">
                                 <div class="dropdown-menu-category-section-content">
@@ -239,7 +239,11 @@
                             </div>
                         </div>
                     </li>
-                    <li><a href="#"><i class="fa fa-tags dropdown-menu-category-icon"></i>Clothes & Shoes</a>
+                    <li>
+                        <span>
+                            <i class="fa fa-tags dropdown-menu-category-icon"></i>
+                            <a href="" class="sub-menu">Clothes</a> - <a href="" class="sub-menu">Shoes</a>
+                        </span>
                         <div class="dropdown-menu-category-section">
                             <div class="dropdown-menu-category-section-inner">
                                 <div class="dropdown-menu-category-section-content">
@@ -622,67 +626,34 @@
                     </li>
                 </ul>
             </li>                        
-            <li class="dropdown"><a class="navbar-item-top" href="#">Following</a>
+            <li class="dropdown">
+                <%= link_to "XU HƯỚNG", "", class: "navbar-item-top" %>
             </li>
-            <li class="dropdown"><a class="navbar-item-top" href="#">Today Delas</a>
+            <li class="dropdown">
+                <%= link_to "KHUYẾN MÃI", "", class: "navbar-item-top" %>
             </li>
-            <li class="dropdown"><a class="navbar-item-top" href="#">Gift Cards</a>
+            <li class="dropdown">
+                <%= link_to "BÁN CHẠY", "", class: "navbar-item-top" %>
             </li>
-            <li class="dropdown"><a class="navbar-item-top" href="#">Gift Ideas</a>
+            <li class="dropdown">
+                <%= link_to "THƯƠNG HIỆU", "", class: "navbar-item-top" %>
             </li>
-            <li class="dropdown"><a class="navbar-item-top" href="#">Weekly Ad</a>
+            <li class="dropdown">
+                <%= link_to "SỰ KIỆN", "", class: "navbar-item-top" %>
             </li>
         </ul>
         <ul class="nav navbar-nav navbar-right navbar-right-no-mar navbar-nav-lg">
-            <li><a href="#nav-login-dialog" data-effect="mfp-move-from-top" class="popup-text"><span >Hello, Sign in</span>Your Account</a>
+            <li>
+                <a href="#nav-login-dialog" data-effect="mfp-move-from-top" class="popup-text" title="Đăng nhập tài khoản">
+                    <span >Xin chào, vui lòng</span>
+                    ĐĂNG NHẬP
+                </a>
             </li>
-            <li class="dropdown"><a href="shopping-cart.html"><span ></span><i class="fa fa-shopping-cart"></i></a>
-                <ul class="dropdown-menu dropdown-menu-shipping-cart">
-                    <li>
-                        <a class="dropdown-menu-shipping-cart-img" href="#">
-                            <img src="/frontend/img/100x100.png" alt="Image Alternative text" title="Image Title" />
-                        </a>
-                        <div class="dropdown-menu-shipping-cart-inner">
-                            <p class="dropdown-menu-shipping-cart-price">$93</p>
-                            <p class="dropdown-menu-shipping-cart-item"><a href="#">Gucci Patent Leather Open Toe Platform</a>
-                            </p>
-                        </div>
-                    </li>
-                    <li>
-                        <a class="dropdown-menu-shipping-cart-img" href="#">
-                            <img src="/frontend/img/100x100.png" alt="Image Alternative text" title="Image Title" />
-                        </a>
-                        <div class="dropdown-menu-shipping-cart-inner">
-                            <p class="dropdown-menu-shipping-cart-price">$10</p>
-                            <p class="dropdown-menu-shipping-cart-item"><a href="#">Nikon D5200 24.1 MP Digital SLR Camera</a>
-                            </p>
-                        </div>
-                    </li>
-                    <li>
-                        <a class="dropdown-menu-shipping-cart-img" href="#">
-                            <img src="/frontend/img/100x100.png" alt="Image Alternative text" title="Image Title" />
-                        </a>
-                        <div class="dropdown-menu-shipping-cart-inner">
-                            <p class="dropdown-menu-shipping-cart-price">$10</p>
-                            <p class="dropdown-menu-shipping-cart-item"><a href="#">Apple 11.6" MacBook Air Notebook </a>
-                            </p>
-                        </div>
-                    </li>
-                    <li>
-                        <a class="dropdown-menu-shipping-cart-img" href="#">
-                            <img src="/frontend/img/100x100.png" alt="Image Alternative text" title="Image Title" />
-                        </a>
-                        <div class="dropdown-menu-shipping-cart-inner">
-                            <p class="dropdown-menu-shipping-cart-price">$75</p>
-                            <p class="dropdown-menu-shipping-cart-item"><a href="#">Fossil Women's Original Boyfriend</a>
-                            </p>
-                        </div>
-                    </li>
-                    <li>
-                        <p class="dropdown-menu-shipping-cart-total">Total: $150</p>
-                        <button class="dropdown-menu-shipping-cart-checkout btn btn-primary">Checkout</button>
-                    </li>
-                </ul>
+            <li>
+                <a href="" title="Giỏ hàng của bạn">
+                    <span>Giỏ hàng</span>
+                    <i class="fa fa-shopping-cart"></i>
+                </a>
             </li>
         </ul>
     </div>
